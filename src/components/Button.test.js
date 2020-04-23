@@ -22,10 +22,10 @@ describe("Button", () => {
   });
   
   test("should make text uppercase", () => {
-  const { container } = render(<Button text="We Salute You!" />);
-  const component = getByText(container, "We Salute You!");
+    const { container } = render(<Button text="We Salute You!" />);
+    const component = getByText(container, "We Salute You!");
 
-  expect(component).toHaveStyleRule("text-transform", "uppercase");
-});
+    expect(component).toHaveStyleRule("text-transform", "uppercase");
+  });
 
 });
